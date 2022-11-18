@@ -4,12 +4,16 @@
   "private": false,
   "main": "./dist/proud-ui.umd.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib src/packages/index.js",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@vue/cli-plugin-router": "^5.0.8",
+    "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "qiniu-js": "^2.5.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -17,9 +21,11 @@
     "@vue/cli-plugin-unit-mocha": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
     "@vue/test-utils": "^1.0.3",
+    "async-validator": "^4.2.5",
     "chai": "^4.1.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "vue-router": "^3.1.3",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [

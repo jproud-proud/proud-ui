@@ -9,11 +9,11 @@ import Input from './input/index.vue'
 import InputNumber from './input-number/index.vue'
 import Form from './form/index.vue'
 import FormItem from './form-item/index.vue'
-import Uploader from './uploader/index.vue'
-import Toast from './toast/index.vue'
-import Message from './message/index.vue'
-import Modal from './modal/index.vue'
-import MessageBox from './message-box/index.vue'
+// import Uploader from './uploader/index.vue'
+// import Toast from './toast/index.vue'
+// import Message from './message/index.vue'
+// import Modal from './modal/index.vue'
+// import MessageBox from './message-box/index.vue'
 
 // 这里提供一个方法，待会用的时候就use这个方法,因为use是vue的方法，所以这个方法要把Vue传进来
 const install = (Vue)=>{
@@ -29,11 +29,11 @@ const install = (Vue)=>{
     Vue.component(InputNumber.name,InputNumber)
     Vue.component(Form.name,Form)
     Vue.component(FormItem.name,FormItem)
-    Vue.component(Uploader.name,Uploader)
-    Vue.component(Toast.name,Toast)
-    Vue.component(Message.name,Message)
-    Vue.component(Modal.name,Modal)
-    Vue.component(MessageBox.name,MessageBox)
+    // Vue.component(Uploader.name,Uploader)
+    // Vue.component(Toast.name,Toast)
+    // Vue.component(Message.name,Message)
+    // Vue.component(Modal.name,Modal)
+    // Vue.component(MessageBox.name,MessageBox)
 }
 
 //这样我们有很多组件就可以在install方法里先注册一下，到时候别人要用的时候再导出一个对象，整个文件作为一个入口，后续再复杂的封装，

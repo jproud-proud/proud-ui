@@ -1,5 +1,6 @@
 <template>
   <div>
+    <pd-button>nothing</pd-button>
     <pd-button
       type="primary"
       @click="handleClick"
@@ -22,7 +23,6 @@
 
 <script>
 export default {
-  name: "Button",
   methods: {
     handleClick() {
       alert(1);
